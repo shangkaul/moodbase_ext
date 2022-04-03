@@ -1,0 +1,11 @@
+{
+  "name": "moodbase",
+  "description": "Moodbase - Productivity New Tab extension",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions" : ["storage"],
+  "chrome_url_overrides" : {
+      "newtab": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'"
+}
