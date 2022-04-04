@@ -9,11 +9,11 @@ export default function Weather()
   useEffect(()=>{
 
     axios
-    .get("https://geolocation-db.com/json/")
+    .get("https://api.ipify.org/?format=json")
     .then((res)=> {
       // console.log(res.data);
       // setLoc({"city":res.data.city,"lat":res.data.latitude,"long":res.data.longitude})
-      var weather_uri="http://api.weatherapi.com/v1/current.json?key=062a8a36a82146db805140312222703&q="+res.data.city;
+      var weather_uri="http://api.weatherapi.com/v1/current.json?key=062a8a36a82146db805140312222703&q="+res.data.ip;
       axios
       .get(weather_uri)
       .then((resp)=> {
