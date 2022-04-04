@@ -7,7 +7,7 @@ export default function Content()
     function get_date()
   {
     var dt=new Date();
-    var clock=dt.toLocaleTimeString(navigator.language, {hour: "2-digit", minute:"2-digit"});
+    var clock=dt.toLocaleTimeString('en-GB', {hour: "2-digit", minute:"2-digit"});
     var cal=dt.toLocaleDateString()
 
     return {"date":cal,"time":clock};
